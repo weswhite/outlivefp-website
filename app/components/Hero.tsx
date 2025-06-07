@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-light leading-tight text-gold-400 mb-8">
-            Stand strong in
+            Outlive
             <br />
             your wealth
           </h1>
