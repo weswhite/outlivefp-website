@@ -16,7 +16,9 @@ const Hero = () => {
         }}
       >
         {/* White to transparent gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white from-0% via-white via-50% to-transparent to-55%"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white from-0% via-white via-50% to-transparent to-55% 
+                        max-h-[600px]:bg-gradient-to-b max-h-[600px]:from-white max-h-[600px]:from-0% 
+                        max-h-[600px]:via-white max-h-[600px]:via-75% max-h-[600px]:to-transparent max-h-[600px]:to-80%"></div>
       </div>
 
       {/* Navigation */}
