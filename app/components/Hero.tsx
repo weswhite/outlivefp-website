@@ -42,13 +42,13 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="bg-accent text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-accent/90 transition-all duration-300 text-center shadow-lg"
+              className="bg-accent text-white px-12 py-3 rounded-full font-medium text-lg hover:bg-accent/90 transition-all duration-300 text-center shadow-lg"
             >
               Schedule Free Call
             </Link>
             <Link
               href="/about"
-              className="border-2 border-primary text-primary px-8 py-4 rounded-full font-medium text-lg hover:bg-primary hover:text-white transition-all duration-300 text-center shadow-sm"
+              className="border-2 border-accent text-accent px-12 py-3 rounded-full font-medium text-lg hover:bg-accent hover:text-white transition-all duration-300 text-center shadow-sm"
             >
               How It Works
             </Link>

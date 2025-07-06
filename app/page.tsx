@@ -17,8 +17,8 @@ export default function Home() {
       </section>
 
       {/* But what if later never comes section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-neutral-50">
-        <div className="max-w-4xl mx-auto text-center mb-20">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-4xl mx-auto text-left mb-20">
           <p className="text-accent text-sm font-medium mb-4">You've been told to sacrifice now and live later</p>
           <h2 className="text-3xl md:text-4xl font-light text-primary">
             But what if later never comes?
@@ -26,14 +26,13 @@ export default function Home() {
         </div>
 
         {/* 2x2 Grid Layout */}
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20">
-            {/* Top Row */}
+        <div className="max-w-6xl mx-auto relative">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {/* Time Keeps Slipping */}
-            <div>
+            <div className="bg-gray-100 p-6 rounded-lg h-48">
               <div className="w-12 h-0.5 bg-primary mb-6"></div>
               <div className="mb-6">
-                <svg className="w-6 h-6 text-primary/40" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M7.90375 20H16.0962V17C16.0962 15.8615 15.6982 14.8877 14.902 14.0787C14.1058 13.2697 13.1385 12.8652 12 12.8652C10.8615 12.8652 9.89417 13.2697 9.098 14.0787C8.30183 14.8877 7.90375 15.8615 7.90375 17V20ZM12 11.1348C13.1385 11.1348 14.1058 10.7302 14.902 9.92125C15.6982 9.11225 16.0962 8.1385 16.0962 7V4H7.90375V7C7.90375 8.1385 8.30183 9.11225 9.098 9.92125C9.89417 10.7302 10.8615 11.1348 12 11.1348ZM4.5 21.5V20H6.404V17C6.404 15.8743 6.712 14.8497 7.328 13.926C7.944 13.0022 8.76033 12.3602 9.777 12C8.76033 11.6333 7.944 10.9898 7.328 10.0693C6.712 9.14875 6.404 8.12567 6.404 7V4H4.5V2.5H19.5V4H17.596V7C17.596 8.12567 17.288 9.14875 16.672 10.0693C16.056 10.9898 15.2397 11.6333 14.223 12C15.2397 12.3602 16.056 13.0022 16.672 13.926C17.288 14.8497 17.596 15.8743 17.596 17V20H19.5V21.5H4.5Z"/>
                 </svg>
               </div>
@@ -44,10 +43,10 @@ export default function Home() {
             </div>
 
             {/* Disconnection from purpose */}
-            <div>
+            <div className="bg-gray-100 p-6 rounded-lg h-48">
               <div className="w-12 h-0.5 bg-primary mb-6"></div>
               <div className="mb-6">
-                <svg className="w-6 h-6 text-primary/40" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12.025 21.3C10.0097 19.2743 8.37958 17.6083 7.13475 16.302C5.88975 14.9955 4.92467 13.8888 4.2395 12.9818C3.55417 12.0748 3.09292 11.2882 2.85575 10.622C2.61858 9.956 2.5 9.24867 2.5 8.5C2.5 7.03633 3.00908 5.79542 4.02725 4.77725C5.04542 3.75908 6.28633 3.25 7.75 3.25C8.44417 3.25 9.11517 3.37308 9.763 3.61925C10.4107 3.86542 10.9935 4.22117 11.5115 4.6865L9.9135 10.25H12.9423L12.1405 18.4713L15.0962 8.75H12.077L13.7078 3.873C14.0934 3.66533 14.4985 3.50958 14.923 3.40575C15.3473 3.30192 15.7832 3.25 16.2308 3.25C17.6944 3.25 18.9353 3.75908 19.9535 4.77725C20.9717 5.79542 21.4807 7.03633 21.4807 8.5C21.4807 9.25517 21.3547 9.97567 21.1028 10.6615C20.8509 11.3475 20.3766 12.1513 19.6798 13.073C18.9829 13.9948 18.0195 15.1032 16.7895 16.398C15.5593 17.6928 13.9712 19.3268 12.025 21.3ZM10.7213 17.8423L11.304 11.75H7.927L9.773 5.29025C9.4615 5.13142 9.1345 5.00167 8.792 4.901C8.44967 4.80033 8.10233 4.75 7.75 4.75C6.71433 4.75 5.83042 5.11608 5.09825 5.84825C4.36608 6.58042 4 7.46433 4 8.5C4 9.0295 4.10542 9.56858 4.31625 10.1173C4.52725 10.6661 4.89108 11.2953 5.40775 12.0048C5.92442 12.7144 6.61575 13.5372 7.48175 14.473C8.34775 15.409 9.42758 16.5321 10.7213 17.8423ZM14.123 17.0175C16.2807 14.8072 17.7964 13.0812 18.6702 11.8395C19.5439 10.5978 19.9807 9.48467 19.9807 8.5C19.9807 7.46433 19.6147 6.58042 18.8825 5.84825C18.1503 5.11608 17.2664 4.75 16.2308 4.75C16.0089 4.75 15.7903 4.7705 15.575 4.8115C15.3597 4.8525 15.1443 4.90958 14.9288 4.98275L14.1845 7.25H17.0943L14.123 17.0175Z"/>
                 </svg>
               </div>
@@ -57,12 +56,11 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Bottom Row */}
             {/* Success Without Fulfillment */}
-            <div>
+            <div className="bg-gray-100 p-6 rounded-lg h-48">
               <div className="w-12 h-0.5 bg-primary mb-6"></div>
               <div className="mb-6">
-                <svg className="w-6 h-6 text-primary/40" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M16 17.5481V16.0481H18.9655L13.352 10.5038L9.352 14.5038L2.5 7.6021L3.55375 6.5481L9.352 12.3463L13.352 8.34635L20 14.9943V12.0481H21.5V17.5481H16Z"/>
                 </svg>
               </div>
@@ -73,38 +71,20 @@ export default function Home() {
             </div>
 
             {/* Call-out box */}
-            <div className="flex items-start">
-              <div className="bg-primary text-white p-6 rounded-lg relative w-full">
-                <div className="absolute -top-3 -left-3">
-                  <img 
-                    src="/images/3e56a2659e62ed782670829113d966303f78f728.png" 
-                    alt="Outlive icon" 
-                    className="w-8 h-8"
-                  />
-                </div>
-                <p className="text-sm leading-relaxed">
-                  I believe your finances should support your purpose, and your future. <strong>Because life is too short to delay what matters most.</strong>
-                </p>
-              </div>
+            <div className="bg-primary text-white p-6 rounded-lg h-48 flex flex-col justify-center relative">
+              <img 
+                src="/images/3e56a2659e62ed782670829113d966303f78f728.png" 
+                alt="Outlive icon" 
+                className="w-8 h-8 mb-4"
+              />
+              <p className="text-sm leading-relaxed">
+                I believe your finances should support your purpose, and your future. <strong>Because life is too short to delay what matters most.</strong>
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Survive Without Suffering section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-neutral-50">
-        <div className="max-w-4xl mx-auto">
-          <h3 className="text-xl font-medium text-primary mb-4">Survive Without Suffering</h3>
-          <p className="text-primary/70 mb-8">
-            Learn what to expect. Plan around the bad things.
-          </p>
-          <div className="bg-primary text-white p-6 rounded-lg">
-            <p className="text-sm">
-              Neither you (Herent should support your purpose) learn your values. Remove this to be kind of right therapy for your mental health.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Meet Zach Rodriguez section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
@@ -114,31 +94,41 @@ export default function Home() {
             Meet Zach Rodriguez
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <img 
-                src="/images/meet-zach.jpg" 
-                alt="Zach Rodriguez" 
-                className="w-full max-w-sm mx-auto rounded-lg"
-              />
-            </div>
-            <div>
-              <p className="text-primary/70 mb-6">
-                After navigating stressful trials and unexpected transitions, <strong>Zach founded Outlive Financial Planning</strong> as a Registered Investment Advisor (you know, legally, but we can write more here).
-              </p>
-              <p className="text-primary/70 mb-6">
-                As a state-licensed financial advisor focusing primarily on counseling of strategic insight, transparency, and deep empathy.
-              </p>
-              <div className="mb-6">
-                <p className="text-sm font-medium text-primary mb-2">Zach Rodriguez</p>
-                <p className="text-xs text-primary/60">
-                  Founder & Your Outlive Financial Planning<br/>
-                  Registered Investment Advisory Representative
-                </p>
+          <div className="grid md:grid-cols-2 gap-12 items-stretch">
+            <div className="flex justify-center">
+              <div className="aspect-square w-full max-w-sm">
+                <img 
+                  src="/images/meet-zach.jpg" 
+                  alt="Zach Rodriguez" 
+                  className="w-full h-full object-cover object-center rounded-lg"
+                />
               </div>
-              <p className="text-xs text-primary/60 mb-8">
-                California insurance license, Certified Financial Planning ™, and smart thinking. If only you didn't mind to know that.
+            </div>
+            <div className="bg-white p-8 rounded-lg">
+              <p className="text-primary/70 mb-6">
+                After navigating personal trials and professional transitions, <strong>Zach founded Outlive Financial Planning</strong>, a Registered Investment Adviser, to help people live with more clarity, confidence, and intention.
               </p>
+              <p className="text-primary/70 mb-8">
+                As a values-based, fee-only advisor, he brings a rare combination of strategic insight, <strong>transparency</strong>, and deep empathy.
+              </p>
+              
+              <div className="flex items-start mb-6">
+                <div className="w-12 h-12 bg-gray-300 rounded-full flex-shrink-0 mr-4 flex items-center justify-center">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.625 9.1875C5.625 12.6938 8.49375 15.5625 12 15.5625C15.5063 15.5625 18.375 12.6938 18.375 9.1875C18.375 5.68125 15.5063 2.8125 12 2.8125C8.49375 2.8125 5.625 5.68125 5.625 9.1875ZM16.875 9.1875C16.875 11.8687 14.6812 14.0625 12 14.0625C9.31875 14.0625 7.125 11.8687 7.125 9.1875C7.125 6.50625 9.31875 4.3125 12 4.3125C14.6812 4.3125 16.875 6.50625 16.875 9.1875Z" fill="#9CA3AF"/>
+                    <path d="M4.5751 22.3875C6.5626 20.4 9.1876 19.3125 12.0001 19.3125C14.8126 19.3125 17.4376 20.4 19.4251 22.3875L20.4938 21.3187C18.2251 19.0687 15.2063 17.8125 12.0001 17.8125C8.79385 17.8125 5.7751 19.0687 3.50635 21.3187L4.5751 22.3875Z" fill="#9CA3AF"/>
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-primary mb-1">Zach Rodriguez</p>
+                  <p className="text-xs text-primary/60 mb-3">
+                    Founder & Lead Planner, Outlive Financial Planning
+                  </p>
+                  <p className="text-sm text-primary/70 italic">
+                    "My <strong>mission</strong> is to help you stop outsourcing joy to 'someday'—and start building a life you don't want to retire from."
+                  </p>
+                </div>
+              </div>
               
               <button className="bg-accent text-white px-6 py-3 rounded-full font-medium hover:bg-accent/90 transition-all duration-300">
                 Zach's Story →
@@ -207,6 +197,77 @@ export default function Home() {
             <button className="bg-accent text-white px-6 py-3 rounded-full font-medium hover:bg-accent/90 transition-all duration-300 inline-flex items-center">
               How Outlive is Different →
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* How We Can Work Together section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-neutral-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl font-light text-primary mb-6">
+                How We Can Work Together
+              </h2>
+              <p className="text-primary/70 text-lg mb-8 leading-relaxed">
+                A range of practical, personalized solutions to help you feel confident and clear—whether you're looking for a long-term planning relationship or a one-time check-in.
+              </p>
+              <button className="bg-accent text-white px-8 py-3 rounded-full font-medium hover:bg-accent/90 transition-all duration-300 inline-flex items-center">
+                See Our Services →
+              </button>
+            </div>
+            
+            <div className="space-y-4">
+              {/* Most Popular - Ongoing Financial Planning */}
+              <div className="relative overflow-hidden">
+                {/* Gold background - rectangular with rounded corners */}
+                <div className="w-full h-32 bg-accent rounded-2xl"></div>
+                {/* Blue overlapping circle - larger than container */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-5/6 bg-primary rounded-full flex flex-col items-center justify-center text-white text-center p-4" style={{ height: '11.5rem' }}>
+                    <span className="bg-accent text-white text-xs font-medium px-3 py-1 rounded-full mb-2">
+                      MOST POPULAR
+                    </span>
+                    <h3 className="text-lg font-semibold mb-1">Ongoing Financial Planning</h3>
+                    <p className="text-white/90 text-xs">
+                      Purpose-driven holistic financial<br/>planning partnership
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Investment Management */}
+              <div className="bg-white border border-neutral-200 rounded-2xl p-6 text-center">
+                <h3 className="text-lg font-medium text-primary mb-2">Investment Management</h3>
+                <p className="text-primary/70 text-sm">
+                  Custom portfolios built for transparency,<br/>tax efficiency, and control
+                </p>
+              </div>
+
+              {/* Estate Planning */}
+              <div className="bg-white border border-neutral-200 rounded-2xl p-6 text-center">
+                <h3 className="text-lg font-medium text-primary mb-2">Estate Planning</h3>
+                <p className="text-primary/70 text-sm">
+                  Guide you through the process of<br/>creating a personalized Estate Plan
+                </p>
+              </div>
+
+              {/* One-Time Financial Plans */}
+              <div className="bg-white border border-neutral-200 rounded-2xl p-6 text-center">
+                <h3 className="text-lg font-medium text-primary mb-2">One-Time Financial Plans</h3>
+                <p className="text-primary/70 text-sm">
+                  A holistic, one-time plan for<br/>DIYers ready to optimize
+                </p>
+              </div>
+
+              {/* Advisory Services */}
+              <div className="bg-white border border-neutral-200 rounded-2xl p-6 text-center">
+                <h3 className="text-lg font-medium text-primary mb-2">Advisory Services</h3>
+                <p className="text-primary/70 text-sm">
+                  Hourly or project-based help for life's big decisions<br/>— from military bonuses to business transitions
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
